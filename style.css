@@ -82,3 +82,11 @@ button:hover{
   font-size: 14px;
   color: gray;
 }
+button {
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}

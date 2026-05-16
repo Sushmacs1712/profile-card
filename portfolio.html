@@ -1,14 +1,84 @@
-<h1>My Portfolio</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<section>
-   <h2>Skills</h2>
-</section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
 
-<section>
-   <h2>Projects</h2>
-</section>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<section>
-   <h2>Certifications</h2>
-</section>
+<body>
 
+  <h1 class="title">My Portfolio</h1>
+
+  <div class="menu">
+
+    <button class="main-btn" onclick="showSection('skillsSection')">
+      Skills
+    </button>
+
+    <button class="main-btn" onclick="showSection('projectsSection')">
+      Projects
+    </button>
+
+    <button class="main-btn" onclick="showSection('certSection')">
+      Certifications
+    </button>
+
+  </div>
+
+  <!-- Skills -->
+
+  <div id="skillsSection" class="section-box">
+    <h2>My Skills</h2>
+
+    <div class="tag-container">
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">React JS</span>
+      <span class="tag">SQL</span>
+    </div>
+  </div>
+
+  <!-- Projects -->
+
+  <div id="projectsSection" class="section-box">
+
+    <h2>Projects</h2>
+
+    <button class="project-btn" onclick="toggleProject('project1')">
+      Portfolio Website
+    </button>
+
+    <div id="project1" class="project-content">
+      Responsive portfolio website using HTML, CSS and JavaScript.
+    </div>
+
+    <button class="project-btn" onclick="toggleProject('project2')">
+      Profile Card UI
+    </button>
+
+    <div id="project2" class="project-content">
+      Interactive profile card with animations and hover effects.
+    </div>
+
+  </div>
+
+  <!-- Certifications -->
+
+  <div id="certSection" class="section-box">
+    <h2>Certifications</h2>
+
+    <ul>
+      <li>Frontend Development Certification</li>
+      <li>React Basics Certification</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

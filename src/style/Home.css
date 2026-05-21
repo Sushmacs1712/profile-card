@@ -1,0 +1,126 @@
+Paste this inside `Home.css`:
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.home-container {
+  background-color: #f5f7fb;
+  color: #222;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+
+.hero-section {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-section h2 {
+  color: #4f46e5;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.hero-section button {
+  width: 180px;
+  padding: 12px;
+  border: none;
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-section button:hover {
+  background-color: #3730a3;
+}
+
+/* Section Cards */
+
+.section-card {
+  background-color: white;
+  margin: 30px 60px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.section-card h2 {
+  margin-bottom: 20px;
+  color: #4f46e5;
+}
+
+/* Skills */
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-container span {
+  background-color: #e0e7ff;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+/* Projects */
+
+.project-card {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #111827;
+  color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-card {
+    margin: 20px;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+}
+```

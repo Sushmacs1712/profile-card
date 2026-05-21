@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.about-container {
+  background-color: #f5f7fb;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.about-hero p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.about-card {
+  background-color: white;
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.about-card h2 {
+  color: #4f46e5;
+  margin-bottom: 15px;
+}
+
+.about-card p {
+  line-height: 1.7;
+  color: #374151;
+}
+
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-box span {
+  background-color: #e0e7ff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
+
+  .skills-box {
+    justify-content: center;
+  }
+}

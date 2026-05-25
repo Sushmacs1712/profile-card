@@ -1,10 +1,11 @@
 
 .skills-section {
+  background: #111827;
+  color: white;
   min-height: 100vh;
   padding: 80px 10%;
-  background: #0f172a;
-  color: white;
 }
+
 
 .skills-title {
   text-align: center;
@@ -149,4 +150,5 @@
 .skill-tags span:hover {
   background: white;
   transform: scale(1.05);
+  }
 }
